@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritji Rabo | Computer Science Technical Writer & Analyst</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        header { 
+            display: flex; 
+            align-items: center; 
+            gap: 2rem; 
+            margin-bottom: 3rem; 
+            border-bottom: 1px solid #334155; 
+            padding-bottom: 2rem; 
+        }
+        .header-text { flex: 1; }
+        .profile-img { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            border: 3px solid var(--accent); 
+            object-fit: cover;
+            background: #334155;
+        }
+
+        h1 { font-size: 2.5rem; color: var(--text-main); margin-bottom: 0.3rem; }
+        .subtitle { font-size: 1.25rem; color: var(--accent); font-weight: 500; margin-bottom: 0.5rem; }
+        .meta { color: var(--text-muted); font-size: 0.95rem; display: flex; flex-wrap: wrap; gap: 15px; }
+        .meta a { color: var(--accent); text-decoration: none; }
+        .meta a:hover { text-decoration: underline; }
+        
+        section { margin-bottom: 3rem; }
+        h2 { font-size: 1.5rem; color: var(--text-main); margin-bottom: 1.2rem; border-left: 4px solid var(--accent); padding-left: 10px; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } header { flex-direction: column; text-align: center; } .meta { justify-content: center; } }
+        
+        .card { background: var(--card-bg); border-radius: 8px; border: 1px solid #334155; overflow: hidden; display: flex; flex-direction: column; }
+        .card-img { width: 100%; height: 150px; object-fit: cover; background: #111827; }
+        .card-content { padding: 1.5rem; flex: 1; }
+        .card h3 { color: var(--accent); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .tag { display: inline-block; background: #0284c7; color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+        
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .skill-tag { background: #1e293b; border: 1px solid #475569; color: var(--text-main); padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.9rem; }
+        
+        .timeline-item { margin-bottom: 1.5rem; padding-left: 1rem; border-left: 2px solid #334155; }
+        .timeline-title { font-weight: bold; color: var(--text-main); }
+        .timeline-meta { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.3rem; }
+        .timeline-desc { color: var(--text-muted); font-size: 0.95rem; }
+
+        .cta-btn { display: inline-block; background: var(--accent); color: #0f172a; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="avatar.JPEG" alt="Ritji Rabo" class="profile-img" onerror="this.src='https://placehold.co'">
+            <div class="header-text">
+                <h1>RITJI RABO</h1>
+                <div class="subtitle">Computer Science Graduate & Technical Documentation Specialist</div>
+                <div class="meta">
+                    <span>📍 Abuja, Nigeria (Remote)</span>
+                    <a href="mailto:raboritji@gmail.com">✉️ raboritji@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/miracle-ritji-rabo-b4a465297?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">🔗 LinkedIn Profile</a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p style="color: var(--text-muted);">
+                B.Sc. Computer Science graduate (Second Class Upper, 3.5/5.0 GPA) from the National Open University of Nigeria. Fusing 3 years of hands-on data entry, document preparation, and IT systems operations with fundamental software logic to compile rigorous, industry-grade research reports, technical business proposals, and analytical documentations for global tech initiatives.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills Blueprint</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Technical & IT Report Writing</span>
+                <span class="skill-tag">Business Plans & Proposals</span>
+                <span class="skill-tag">Systems & Document Preparation</span>
+                <span class="skill-tag">Data Entry & Architecture Analysis</span>
+                <span class="skill-tag">Basic Computer Troubleshooting</span>
+                <span class="skill-tag">Microsoft Office Suite Expert</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Writing & Case Studies</h2>
+            <div class="grid">
+                <!-- Project 1: Built from your business plan image -->
+                <div class="card">
+                    <img src="project1.JPEG" class="card-img" onerror="this.src='https://placehold.co'">
+                    <div class="card-content">
+                        <h3>Comprehensive E-Commerce Platform Business Proposal</h3>
+                        <p>A structured, end-to-end operational blueprint outlining software scaling models, SWOT frameworks, developer milestone timelines, and logistics integrations.</p>
+                        <span class="tag">Business Proposal</span>
+                    </div>
+                </div>
+                <!-- Project 2: Built from your CS background -->
+                <div class="card">
+                    <img src="project2.JPEG" class="card-img" onerror="this.src='https://placehold.co'">
+                    <div class="card-content">
+                        <h3>RESTful API Architecture for Next-Gen Fulfillment</h3>
+                        <p>Detailed technical documentation covering secure endpoint integrations, automated request payloads, and webhook handlers for enterprise logistics inventory platforms.</p>
+                        <span class="tag">Technical Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="timeline-item">
+                <div class="timeline-title">Computer Operator / IT Support Specialist</div>
+                <div class="timeline-meta">AMB Absolute Information Technology, Abuja | 2022 – 2025</div>
+                <div class="timeline-desc">
+                    Managed high-volume technical data entry, raw document preparations, and customer operations. Spearheaded hardware and software troubleshooting to optimize operational uptime while generating clean administrative records.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-title">B.Sc. Computer Science (Coursework Complete)</div>
+                <div class="timeline-meta">National Open University of Nigeria | 2022 – 2026</div>
+                <div class="timeline-desc">
+                    Graduated with a 3.5 / 5.0 Cumulative GPA (Second Class Honors, Upper Division). Core specializations focused on analytical problem solving, logic system designs, and architectural report writing.
+                </div>
+            </div>
+        </section>
+
+        <section style="text-align: center; border-top: 1px solid #334155; padding-top: 2rem;">
+            <h2>Need Rigorous Technical Content?</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">Let's leverage software-level analysis to build high-stakes documentation for your enterprise.</p>
+            <a href="mailto:raboritji@gmail.com" class="cta-btn">Let's Discuss Your Project</a>
+        </section>
+    </div>
+</body>
+</html>
